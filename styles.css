@@ -1,0 +1,247 @@
+:root {
+	/* colors */
+	--white: hsl(0, 0%, 100%);
+	--stone-100: hsl(0, 0%, 90%);
+	--stone-150: hsl(30, 18%, 87%);
+	--stone-600: hsl(30, 10%, 34%);
+	--stone-900: hsl(24, 5%, 18%);
+	--brown-800: hsl(14, 45%, 36%);
+	--rose-50: hsl(330, 100%, 98%);
+	--rose-800: hsl(332, 51%, 32%);
+
+	/* fonts */
+	--serif-Young: "Young Serif", serif;
+	--sans-Outfit: "Outfit", sans-serif;
+
+	--text-preset-1: 2.5rem;
+	--text-preset-2: 1.75rem;
+	--text-preset-3: 1.25rem;
+	--text-preset-4: 1rem;
+
+	--weight-900: 900;
+	--weight-700: 700;
+	--weight-600: 600;
+	--weight-400: 400;
+
+	--spacing-1600: 8rem;
+	--spacing-600: 3rem;
+	--spacing-500: 2.5rem;
+	--spacing-400: 2rem;
+    --spacing-300: 1.5rem;
+	--spacing-200: 1rem;
+	--spacing-150: 0.75rem;
+	--spacing-100: 0.5rem;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: var(--sans-Outfit);
+	font-size: var(--text-preset-4);
+	color: var(--stone-600);
+	background-color: var(--white);
+	/* padding: 0 var(--spacing-200); */
+}
+
+img {
+	display: block;
+	width: 100%;
+	margin-bottom: var(--spacing-150);
+}
+
+h1 {
+	font-family: var(--serif-Young);
+	font-size: var(--text-preset-1);
+	font-weight: var(--weight-900);
+	color: var(--stone-900);
+	padding: 0 var(--spacing-200);
+	margin-bottom: var(--spacing-200);
+}
+
+p {
+	font-size: var(--text-preset-4);
+	line-height: 150%;
+    margin-left: var(--spacing-200);
+    margin-bottom: var(--spacing-200);
+}
+
+.preparation {
+    width: 90%;
+    background-color: var(--rose-50);
+    padding: var(--spacing-300);
+    margin: 0 auto var(--spacing-200);
+}
+
+.preparation h3 {
+    font-size: var(--text-preset-3);
+    font-weight: var(--weight-700);
+    color: var(--rose-800);
+    margin-bottom: var(--spacing-100);
+}
+
+.preparation ul {
+    padding-left: var(--spacing-300);
+}
+
+.preparation li {
+    list-style-position: outside;
+    padding-left: var(--spacing-300);
+    margin-bottom: var(--spacing-100);
+}
+
+li span {
+    font-weight: var(--weight-700);
+    line-height: 150%;
+}
+
+h2 {
+    font-family: var(--serif-Young);
+    font-size: var(--text-preset-2);
+    font-weight: var(--weight-700);
+    color: var(--brown-800);
+    margin-bottom: var(--spacing-200);
+    margin-top: 0;
+}
+
+.ingredients,
+.instructions,
+.nutrition {
+    padding: var(--spacing-300);
+    margin: 0 auto var(--spacing-200);
+}
+
+.ingredients::after,
+.instructions::after{
+    content: "";
+    display: block;
+    border-bottom: 1px solid var(--stone-150);
+    margin-top: var(--spacing-600);
+    margin-bottom: 0;
+}
+
+.ingredients ul,
+.instructions ol {
+    padding-left: var(--spacing-300);
+}
+
+.ingredients li,
+.instructions li {
+    list-style-position: outside;
+    padding-left: var(--spacing-300);
+    margin-bottom: var(--spacing-100);
+    line-height: 150%;
+}
+
+.nutrition table {
+    width: 80%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    margin: 0 auto;
+
+}
+
+.nutrition table tr {
+    width: 100%;
+    border-bottom: 1px solid var(--stone-150);
+}
+
+.nutrition table tr td {
+    padding: var(--spacing-100)
+}
+
+.nutrition table td span {
+    color: var(--brown-800);
+    font-weight: var(--weight-700);
+}
+
+/* footer */
+
+.attribution {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+
+.attribution img {
+    display: inline-block;
+    width: 20%;
+}
+
+
+/* tablet */
+
+@media (min-width: 600px) {
+    body {
+        font-size: var(--text-preset-3);
+    }
+
+    h1 {
+        font-size: var(--text-preset-1);
+    }
+
+    p {
+        margin-left: var(--spacing-300);
+    }
+
+    .preparation h3 {
+        font-size: var(--text-preset-2);
+    }
+
+    .ingredients,
+    .instructions,
+    .nutrition {
+        padding: var(--spacing-400);
+    }
+
+    .ingredients ul,
+    .instructions ol {
+        padding-left: var(--spacing-400);
+    }
+
+
+    .attribution img {
+        width: 20%;
+    }
+}
+
+@media (min-width: 800px) {
+    body {
+        font-size: var(--text-preset-2);
+    }
+
+    h1 {
+        font-size: var(--text-preset-1);
+    }
+
+    p {
+        margin-left: var(--spacing-400);
+    }
+
+    .preparation h3 {
+        font-size: var(--text-preset-1);
+    }
+
+    .ingredients,
+    .instructions,
+    .nutrition {
+        padding: var(--spacing-600);
+    }
+
+    .ingredients ul,
+    .instructions ol {
+        padding-left: var(--spacing-600);
+    }
+
+    .attribution img {
+        width: 15%;
+    }
+}
