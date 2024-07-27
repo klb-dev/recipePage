@@ -186,18 +186,8 @@ h2 {
         border-radius: var(--spacing-150);
     }
 
-
-
-    h1 {
-        font-size: var(--text-preset-1);
-    }
-
     p {
         margin-left: var(--spacing-300);
-    }
-
-    .preparation h3 {
-        font-size: var(--text-preset-2);
     }
 
     .ingredients,
@@ -218,20 +208,9 @@ h2 {
 }
 
 @media (min-width: 800px) {
-    body {
-        font-size: var(--text-preset-2);
-    }
-
-    h1 {
-        font-size: var(--text-preset-1);
-    }
 
     p {
         margin-left: var(--spacing-400);
-    }
-
-    .preparation h3 {
-        font-size: var(--text-preset-1);
     }
 
     .ingredients,
